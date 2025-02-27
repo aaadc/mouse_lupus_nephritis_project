@@ -41,8 +41,6 @@ sn.combined@meta.data[sn.combined@meta.data$seurat_cluster %in% c(19), 'cluster_
 sn.combined@meta.data[sn.combined@meta.data$seurat_cluster %in% c(21), 'cluster_annotation'] <- 'Dividing_cell'
 
 #fig 2A
-library(ggsci)
-names(my_cols) <- sort(unique(scores_allsample$celltype));my_cols[which(names(my_cols)=='TAL')] <- 'gray94'
 p <- DimPlot(sn.combined,group.by='cluster_annotation',label=T)+labs(title='Annotation')+scale_color_manual(values=cols)
 
 #fig S4A
