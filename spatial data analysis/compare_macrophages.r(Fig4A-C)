@@ -1,5 +1,5 @@
 library(Seurat)
-immune <- readRDS('../immune.combined.rds')
+immune <- readRDS('../sn.immune.rds')
 
 #find DEGs between two macrophage subclusters
 DefaultAssay(immune) <- 'RNA'
