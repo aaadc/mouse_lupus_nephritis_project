@@ -1,6 +1,7 @@
 library(Seurat)
 sn <- readRDS('sn.rds')
 sn <- subset(sn,nCount_RNA >500 & nCount_RNA < 3500 & percent.mt < 5)
+
 #seurat pipeline to remove batch effect
 sample.list <- SplitObject(control1, split.by = "sample")
 sample.list <- lapply(X = sample.list, FUN = function(x) {
