@@ -5,7 +5,7 @@ ligand_receptor <- readRDS('mouse_lr_pair.rds') #from CellTalk database
 
 #calculate L-R pairs weights on spatial
 library(Seurat)
-seu_region <- readRDS('seu_region.rds')
+seu_region <- readRDS('seu_region.rds') #interface information was preserved in 'identify_myo-macro_interface.r' step
 
 ligand_receptor <- lr_network
 lr_scale_dataset1 <- function(obj) {
