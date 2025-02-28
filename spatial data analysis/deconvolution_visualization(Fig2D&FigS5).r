@@ -52,6 +52,7 @@ scores$celltype <- dataa
 scores_allsample <- bind_rows(scores_allsample,scores)
 }
 scores_allsample <- scores_allsample[-1,]
+write.csv(scores_allsample,'rctd_scores_allsample.csv')
 
 library(ggplot2)
 library(ggsci)
