@@ -19,7 +19,7 @@ seu_region@meta.data[seu_region@meta.data$cor2 == 'TRUE'& seu_region@meta.data$c
 seu_region$cor4 <-  seu_region$TAL >0.1
 meta <- seu_region@meta.data
 
-#fig 3D
+#fig 4D
 p1 <- ggplot(meta, aes(as.numeric(coor_x),as.numeric(coor_y),fill = cor4))+                                        
   geom_tile()+
   theme_bw()+
